@@ -57,8 +57,7 @@ class GemRelease
     system "gem build #{@gem_spec}"
     gem_file = Dir["*.gem"][0]
 
-    system "gem inabox -g #{dest}"
-    system "gem inabox  #{gem_file}"
+    system "gem inabox  g #{dest} #{gem_file}"
 
     File.delete(gem_file)
     system "git checkout master"
