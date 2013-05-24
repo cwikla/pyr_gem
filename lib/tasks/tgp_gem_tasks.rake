@@ -1,7 +1,7 @@
 require 'geminabox'
 
 class GemRelease
-  TGP_GEM_SERVER = "http://extapi:bobafett42@gems.thegiantpixel.com"
+  TGP_GEM_SERVER = "http://tgpgems:c3po42@gems.thegiantpixel.com"
 
   def version_file
     vfiles = Dir["lib/tgp/**/version.rb"]
@@ -57,7 +57,7 @@ class GemRelease
     system "gem build #{@gem_spec}"
     gem_file = Dir["*.gem"][0]
 
-    system "gem inabox  g #{dest} #{gem_file}"
+    system "gem inabox -g #{dest} #{gem_file}"
 
     File.delete(gem_file)
     system "git checkout master"
