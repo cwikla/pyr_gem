@@ -53,7 +53,7 @@ class GemRelease
     system "git pull"
     system "git checkout #{branch}" #
 
-    puts "Pushing branch #{branch} to #{dest}"
+    #puts "Pushing branch #{branch} to #{dest}"
     system "gem build #{@gem_spec}"
     gem_file = Dir["*.gem"][0]
 
