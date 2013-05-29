@@ -1,5 +1,7 @@
 require "tgp/gem/engine"
 require "tgp/gem/version"
 
-module TgpGem
+module Tgp
+  module Gem
+  end
 end
