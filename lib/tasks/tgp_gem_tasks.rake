@@ -15,7 +15,7 @@ class GemRelease
   def initialize
     File.open(version_file) do |f|
       @full_content = f.read
-      matches = /VERSION\s*=\s*\"(\d\.\d\.\d)\"/.match(@full_content)[1]
+      matches = /VERSION\s*=\s*\"(\d+\.\d+\.\d+)\"/.match(@full_content)[1]
       @version = matches.split(".").map { |x| x.to_i }
     end
 
