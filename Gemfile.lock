@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tgp_gem (0.1.0)
+    tgp_gem (0.1.1)
       geminabox
       rails (~> 3.2.8)
 
