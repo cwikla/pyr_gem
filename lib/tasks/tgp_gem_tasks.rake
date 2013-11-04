@@ -25,7 +25,7 @@ class GemRelease
   def save
     File.open(version_file, "w") do |f|
       new_version = @version.join(".")
-      new_content = @full_content.gsub(/VERSION\s*=\s*\"(\d\.\d\.\d)\"/, "VERSION = \"#{new_version}\"")
+      new_content = @full_content.gsub(/VERSION\s*=\s*\"(\d+\.\d+\.\d+)\"/, "VERSION = \"#{new_version}\"")
       f.write(new_content)
     end
   end
