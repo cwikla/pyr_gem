@@ -1,3 +1,2 @@
-= TgpGem
+= Cwk::Gem
 
-This project rocks and uses MIT-LICENSE.

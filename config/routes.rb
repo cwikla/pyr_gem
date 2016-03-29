@@ -1,2 +1,2 @@
-Tgp::Gem::Engine.routes.draw do
+Cwk::Gem::Engine.routes.draw do
 end
