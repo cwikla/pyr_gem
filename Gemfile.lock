@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    pyr_gem (2.0.0)
-      geminabox
+    pyr_gem (3.0.2)
+      geminabox (= 0.13.0)
       rails (= 4.2.6)
 
 GEM
