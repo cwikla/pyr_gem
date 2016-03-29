@@ -1,7 +1,8 @@
 require 'geminabox'
+require 'pyr_gem'
 
 class GemRelease
-  PYR_GEM_SERVER = "http://gems:c3po42@gems.cwikla.com"
+  GEM_SERVER = Pyr::Gem::Engine.config.gem_server_url
 
   def version_file
     vfiles = Dir["lib/pyr/**/version.rb"]
@@ -115,6 +116,6 @@ namespace :gem do
   task :push do # => :environment do
     gr = GemRelease.new
     gr.to_s
-    gr.push(GemRelease::PYR_GEM_SERVER)
+    gr.push(GemRelease::GEM_SERVER)
   end
 end
