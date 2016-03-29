@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    cwk_gem (0.1.2)
+    pyr_gem (2.0.0)
       geminabox
-      rails (~> 4.2.6)
+      rails (= 4.2.6)
 
 GEM
   remote: http://rubygems.org/
@@ -128,8 +128,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cwk_gem!
   jquery-rails
+  pyr_gem!
 
 BUNDLED WITH
    1.11.2

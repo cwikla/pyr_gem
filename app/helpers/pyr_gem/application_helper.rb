@@ -1,4 +1,4 @@
-module Cwk::Gem
+module Pyr::Gem
   module ApplicationHelper
   end
 end

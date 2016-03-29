@@ -1,14 +1,14 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "cwk/gem/version"
+require "pyr/gem/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "cwk_gem"
-  s.version     = Cwk::Gem::VERSION
+  s.name        = "pyr_gem"
+  s.version     = Pyr::Gem::VERSION
   s.authors     = ["John Cwikla"]
-  s.email       = ["gems@cwikla.com"]
+  s.email       = ["pyr@cwikla.com"]
   s.homepage    = "http://www.cwikla.com"
   s.summary     = "Gem Base for creating gems"
   s.description = "Base for creating gems"
@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "geminabox"
 
-  s.add_dependency "rails", "~> 4.2.6"
+  #s.add_dependency "rails", "5.0.0beta3"
+  s.add_dependency "rails", "4.2.6"
 end

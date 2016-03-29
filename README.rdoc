@@ -1,2 +1,2 @@
-= Cwk::Gem
+= Pyr::Gem
 

@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Cwk::Gem::Engine => "/cwk_gem"
+  mount Pyr::Gem::Engine => "/pyr_gem"
 end

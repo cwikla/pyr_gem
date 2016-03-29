@@ -1,10 +1,10 @@
 require 'geminabox'
 
 class GemRelease
-  CWK_GEM_SERVER = "http://cwkgems:c3po42@gems.cwikla.com"
+  PYR_GEM_SERVER = "http://gems:c3po42@gems.cwikla.com"
 
   def version_file
-    vfiles = Dir["lib/cwk/**/version.rb"]
+    vfiles = Dir["lib/pyr/**/version.rb"]
 
     raise ArgumentError, "Too many version files!" if vfiles.length > 1
 
@@ -115,6 +115,6 @@ namespace :gem do
   task :push do # => :environment do
     gr = GemRelease.new
     gr.to_s
-    gr.push(GemRelease::CWK_GEM_SERVER)
+    gr.push(GemRelease::PYR_GEM_SERVER)
   end
 end

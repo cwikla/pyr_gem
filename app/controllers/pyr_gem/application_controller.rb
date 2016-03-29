@@ -1,4 +1,4 @@
-module Cwk::Gem
+module Pyr::Gem
   class ApplicationController < ActionController::Base
   end
 end
