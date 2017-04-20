@@ -1,7 +1,5 @@
 source "http://rubygems.org"
 
-ruby '2.3.0'
-
 # Declare your gem's dependencies in pyr_gem.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.

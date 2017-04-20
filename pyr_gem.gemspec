@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["Rakefile"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "geminabox", "0.13.0"
+  s.add_dependency "geminabox" , "0.11.0"
 
   #s.add_dependency "rails", "5.0.0beta3"
-  s.add_dependency "rails", "4.2.6"
+  s.add_dependency "rails", "~> 5.0.2"
 end
