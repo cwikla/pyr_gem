@@ -7,7 +7,9 @@ gemspec
 
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
-gem "sinatra", "~> 2.0.0.rc2"
+gem "sinatra"
+
+gem "nokogiri", ">= 1.10.4"
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

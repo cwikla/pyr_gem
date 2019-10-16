@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.add_dependency "geminabox" , ">= 0.13.5"
 
   #s.add_dependency "rails", "5.0.0beta3"
-  s.add_dependency "rails", "~> 5.1.1"
+  s.add_dependency "rails", "~> 6"
 end
